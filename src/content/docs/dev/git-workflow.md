@@ -49,17 +49,22 @@ git commit -m "docs: actualizar guía de instalación"
 
 ### 3. Pull Request
 
+Los PRs normalmente van dirigidos a la rama `develop`. **No se pueden hacer cambios directos a `main`**.
+
 Antes de abrir PR:
 
-1. Actualiza tu rama
-2. Haz rebase con `develop`
-3. Asegúrate de que los tests pasen
-4. Haz squash de commits de WIP
+1. Actualiza tu rama con los últimos cambios de `develop`
+2. Verifica que la aplicación funcione correctamente
 
 ```bash
-git fetch origin
-git rebase origin/develop
+# En tu rama de feature
+git checkout develop
+git pull origin develop
+git checkout feature/nombre-feature
+git merge develop
 ```
+
+> **Nota**: Si hay conflictos durante el merge, resuélvelos antes de abrir el PR.
 
 ## Convenciones de PR
 
