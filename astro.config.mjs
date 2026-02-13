@@ -25,6 +25,7 @@ export default defineConfig({
                         {label: 'Configuración del Entorno', slug: 'dev/setup'},
                         {label: 'Estilo de Código', slug: 'dev/code-style'},
                         {label: 'Git Workflow', slug: 'dev/git-workflow'},
+                        {label: 'Stack Tecnológico', slug: 'dev/tech-stack'},
                     ],
                 },
                 {
