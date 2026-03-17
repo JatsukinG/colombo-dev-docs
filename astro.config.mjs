@@ -20,19 +20,25 @@ export default defineConfig({
                     ],
                 },
                 {
-                    label: 'Desarrollo',
+                    label: 'General',
                     items: [
-                        {label: 'Configuración del Entorno', slug: 'dev/setup'},
-                        {label: 'Estilo de Código', slug: 'dev/code-style'},
                         {label: 'Git Workflow', slug: 'dev/git-workflow'},
-                        {label: 'Stack Tecnológico', slug: 'dev/tech-stack'},
                         {label: 'Guía SSH — Claves', slug: 'dev/guia-ssh-claves'},
                     ],
                 },
                 {
-                    label: 'Arquitectura',
+                    label: 'React',
                     items: [
+                        {label: 'Configuración del Entorno', slug: 'dev/setup'},
+                        {label: 'Estilo de Código', slug: 'dev/code-style'},
+                        {label: 'Stack Tecnológico', slug: 'dev/tech-stack'},
                         {label: 'Screaming Architecture', slug: 'architecture/screaming-architecture-react'},
+                    ],
+                },
+                {
+                    label: 'Django',
+                    items: [
+                        {label: 'Inicio con Django', slug: 'django/inicio'},
                     ],
                 },
             ],
