@@ -26,6 +26,7 @@ export default defineConfig({
                         {label: 'Estilo de Código', slug: 'dev/code-style'},
                         {label: 'Git Workflow', slug: 'dev/git-workflow'},
                         {label: 'Stack Tecnológico', slug: 'dev/tech-stack'},
+                        {label: 'Guía SSH — Claves', slug: 'dev/guia-ssh-claves'},
                     ],
                 },
                 {

@@ -35,17 +35,33 @@ pnpm lint
 
 ### Orden de Imports
 
+Los imports siguen este orden:
+
+1. **Tipos** — importaciones de tipos e interfaces
+2. **React** — react y sus sub-paquetes
+3. **Terceros** — librerías externas (`node_modules`)
+4. **Proyecto** — paths internos con alias (`@`)
+
+Dentro de cada grupo, las líneas se ordenan de **menor a mayor longitud**.
+
 ```typescript
-// 1. Imports de React
+// 1. Tipos
+import type { FC } from 'react'
+import type { Book, LoanStatus } from '@books/types'
+
+// 2. React
+import { useRef } from 'react'
 import { useState, useEffect } from 'react'
 
-// 2. Imports de terceros
-import { useAtom } from 'jotai'
+// 3. Terceros
+import { atom } from 'jotai'
+import { useAtom, useSetAtom } from 'jotai'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 
-// 3. Imports del proyecto (con aliases)
-import { Button } from '@components'
+// 4. Proyecto
 import { useToast } from '@hooks'
-import { BookForm } from '@books/components'
+import { Button, Spinner } from '@components'
+import { BookForm, BookDetail } from '@books/components'
 ```
 
 ## Convenciones de React
